@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <title>Introducció - HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo" />
+      <h1>HTML, CSS i JS</h1>
+      <div>
+        <button onclick="window.location.href = 'index.html'">
+          Introducció
+        </button>
+        <button onclick="">Primer arxiu HTML</button>
+        <button onclick="">Introducció CSS</button>
+        <button onclick="NavMostrar()">Estils de CSS</button>
+        <button onclick="">Formularis</button>
+      </div>
+    </header>
+    <div class="BackgroundSubLlista">
+      <div id="SubLlista" style="display: none" class="navllista">
+        <button onclick="">Basic</button>
+        <button onclick="">Avançat</button>
+      </div>
+    </div>
+    <div class="banner"></div>
+    <nav></nav>
+    <article>
+      <h1>Introducció</h1>
+      <div>
+        <h2>Que és HTML?</h2>
+        <p></p>
+      </div>
+      <div>
+        <h2>Crear un arxiu HTML</h2>
+        <p>
+          El primer que has de fer es crear un document en blanc i modificar el
+          seu format per el de .html
+        </p>
+        <img
+          src="../images/Format.png"
+          alt="Editar nom i canviar format per .html"
+          class="imatgeformat"
+        />
+      </div>
+      <div>
+        <h2>Establir configuració del arxiu</h2>
+        <p>En aquest punt hem de tenir sempre en l'arxiu el seguent codi:</p>
+        <div class="console">
+          <pre>
+                &lt;!DOCTYPE  html&gt;
+                &lt;html lang="[idioma]"&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Hello world &lt;/title&gt; &lt!-- Serveix per posar nom a la pestanya --&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Hello World&lt;/h1&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </pre
+          >
+        </div>
+      </div>
+      <div class="tip">
+        <h3>Estructura d'arxius i directoris</h3>
+        <div id="tip-text">
+          <p>
+            En una pagina web normal té una serie de arxius i directoris que fan
+            que la web tingui imatges que sigui més visual i fins i tot tingui
+            un petit o gran codi per executar algun element de la pagina. i per
+            tenir tot aixo cal seguir un ordre o més ben dit per funcionar més
+            optimament tenir un ordre. El que sempre es recomana es tenir
+            l'arxiu HTML en la carpeta principal de la pagina, les fotos i
+            videos en una subcarpeta, i l'arxiu css en una altra subcarpeta.
+            L'estructuració que recomano fer servir es la següent.
+          </p>
+          <img src="../images/tree.png" alt="tree /f powershell" />
+        </div>
+      </div>
+    </article>
+    <script src="../js/script_base.js"></script>
+  </body>
+</html>
