@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <title>CSS Basic - HTML</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="array.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo" />
+      <h1>HTML, CSS i JS</h1>
+      <div>
+        <button onclick="window.location.href = '../introduccio/index.html'">
+          Introducció
+        </button>
+        <button onclick="window.location.href = '../html/index.html'">
+          Primer arxiu HTML
+        </button>
+        <button onclick="">Introducció CSS</button>
+        <button onclick="NavMostrar()">Estils de CSS</button>
+        <button onclick="">Formularis</button>
+      </div>
+    </header>
+    <div class="BackgroundSubLlista">
+      <div id="SubLlista" style="display: none" class="navllista">
+        <button onclick="window.location.href = 'index.html'">Basic</button>
+        <button onclick="">Avançat</button>
+      </div>
+    </div>
+    <div class="banner"></div>
+    <nav></nav>
+    <article>
+      <div class="cerca">
+        <h1 style="text-align: center; padding: 20px 0">
+          CSS BASIC
+        </h1>
+        <input
+          type="text"
+          id="cerca"
+          name="Cerca"
+          title="Terme de cerca"
+          required
+        /><br />
+        <button type="button" onclick="funcio()">Cerca</button>
+      </div>
+
+      <div class="container" id="film-container"></div>
+    </article>
+    <footer>
+      <p>
+        Fet per:
+        <a href="mailito:miquelmb11@gmail.com">miquelmb11@gmail.com</a>
+      </p>
+      <p
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:dct="http://purl.org/dc/terms/"
+      >
+        <span property="dct:title">Preparació Examen HTML i CSS</span> by
+        <span property="cc:attributionName">Miquel Marquès Bravo</span> is
+        licensed under
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+          target="_blank"
+          rel="license noopener noreferrer"
+          style="display: inline-block"
+          >CC BY-NC-SA 4.0<img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+            alt=""
+        /></a>
+      </p>
+    </footer>
+    <script src="../js/script_base.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
