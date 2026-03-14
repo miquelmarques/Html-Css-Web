@@ -15,7 +15,7 @@
         <button onclick="window.location.href = 'index.html'">
           Introducció
         </button>
-        <button onclick="">Primer arxiu HTML</button>
+        <button onclick="window.location.href='../html/index.html'">Primer arxiu HTML</button>
         <button onclick="">Introducció CSS</button>
         <button onclick="NavMostrar()">Estils de CSS</button>
         <button onclick="">Formularis</button>
@@ -33,7 +33,12 @@
       <h1>Introducció</h1>
       <div>
         <h2>Que és HTML?</h2>
-        <p></p>
+        <p>
+          HTML (HyperText Markup Language) és el llenguatge de marcatge que
+          s’utilitza per crear i estructurar pàgines web. No és un llenguatge de
+          programació, sinó un sistema d’etiquetes que indica al navegador com
+          ha de mostrar el contingut.
+        </p>
       </div>
       <div>
         <h2>Crear un arxiu HTML</h2>
@@ -53,16 +58,16 @@
         <div class="console">
           <pre>
                 &lt;!DOCTYPE  html&gt;
-                &lt;html lang="[idioma]"&gt;
+                &lt;html lang="[idioma]"&gt; <span class="comment" style="display:none;">&lt!-- Col·loquem el idioma de la pagina web --&gt;</span>
                     &lt;head&gt;
-                        &lt;title&gt;Hello world &lt;/title&gt; &lt!-- Serveix per posar nom a la pestanya --&gt;
+                        &lt;title&gt;Hello world &lt;/title&gt; <span class="comment" style="display:none;">&lt!-- Serveix per posar nom a la pestanya --&gt;</span>
                     &lt;/head&gt;
                     &lt;body&gt;
-                        &lt;h1&gt;Hello World&lt;/h1&gt;
+                        &lt;h1&gt;Hello World&lt;/h1&gt; <span class="comment" style="display:none;">&lt!-- Mostra un titol principal h1 --&gt;</span>
                     &lt;/body&gt;
                 &lt;/html&gt;
-                </pre
-          >
+                </pre>
+          <button onclick="MostrarCommentaris()">Mostrar Comentaris</button>
         </div>
       </div>
       <div class="tip">
@@ -82,6 +87,55 @@
         </div>
       </div>
     </article>
+    <footer>
+      <p>
+        Fet per:
+        <a href="mailito:miquelmb11@gmail.com">miquelmb11@gmail.com</a>
+      </p>
+      <p
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:dct="http://purl.org/dc/terms/"
+      >
+        <span property="dct:title">Preparació Examen HTML i CSS</span> by
+        <span property="cc:attributionName">Miquel Marquès Bravo</span> is
+        licensed under
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+          target="_blank"
+          rel="license noopener noreferrer"
+          style="display: inline-block"
+          >CC BY-NC-SA 4.0<img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+            alt=""
+        /></a>
+      </p>
+    </footer>
     <script src="../js/script_base.js"></script>
   </body>
 </html>

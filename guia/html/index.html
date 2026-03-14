@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <title>HTML Basic - HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo" />
+      <h1>HTML, CSS i JS</h1>
+      <div>
+        <button onclick="window.location.href = '../introduccio/index.html'">
+          Introducció
+        </button>
+        <button onclick="window.location.href='index.html'">Primer arxiu HTML</button>
+        <button onclick="">Introducció CSS</button>
+        <button onclick="NavMostrar()">Estils de CSS</button>
+        <button onclick="">Formularis</button>
+      </div>
+    </header>
+    <div class="BackgroundSubLlista">
+      <div id="SubLlista" style="display: none" class="navllista">
+        <button onclick="">Basic</button>
+        <button onclick="">Avançat</button>
+      </div>
+    </div>
+    <div class="banner"></div>
+    <nav></nav>
+    <article>
+      <h1>Introducció</h1>
+          <div class="caixesparells">
+        <h2 id="2" class="titolsapartats">Creació de la meva Primera Web</h2>
+        <p class="text"> Un cop tenim la estructura web feta el que farem es posar-li el codi per poder mostrar-lo en el
+            navegador i
+            per tant necessites que saber el codi per aixó en auqets apratats et poso el nom perquè serveix i una
+            captura de com funciona</p>
+        <div>
+            <p class="subtitol">Elements En linia i elements en bloc </p>
+            <p class="text">Els elements en bloc son aquells que començen de una linai i ocupent tot el ample de la
+                linea independenmnet de l'espai que ocupi el bloc</p>
+            <p class="text">En canvi els elements en linia son aquells que s'ha adapten al espai que ocupen o que tu els
+                marques</p>
+            <p class="text"> En HTML existeixen el &lt;div> com ha bloc i el &lt;span> com en linia</p>
+            <div class="flexcodi">
+                <div class="codi"><img src="images/divspan.png" alt="div/span" class=""></div>
+                <div class="result">
+                    <h3>RESULTAT</h3>
+                    element en linia1 element en linia2<br>
+                    element en bloc<br>
+                    element en linia3 element en linia4<br>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Etiqueta H1</h3>
+            <p class="subtitol"> El text en HTML</p>
+            <div class="Mostra">
+               
+                <textarea class="codi console"><h1>Això és un h1</h1></textarea>
+                <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                <div class="resultat"></div>
+            </div>
+            <h3>Etiqueta h2</h3>
+              <div class="Mostra">
+                <textarea class="codi console"> <h2>Això és un h2</h2></textarea>
+                <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                <div class="resultat"></div>
+            </div>
+            <h3>Etiqueta p</h3>
+              <div class="Mostra">
+                <textarea class="codi console"><p>Paragraf</p></textarea>
+                <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                <div class="resultat"></div>
+            </div>
+            <h3>Etiqueta br</h3>
+              <div class="Mostra">
+                <textarea class="codi console">Hola <br> adeu </textarea>
+                <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                <div class="resultat"></div>
+            </div>
+            <h3>Etiqueta pre</h3>
+              <div class="Mostra">
+                <textarea class="codi console"><pre>Serveix per mostrar         esta estructurat realment
+                    el arxiu
+                </pre></textarea>
+                <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                <div class="resultat"></div>
+            </div>
+            <h3>Etiqueta pre</h3>
+               <div class="Mostra">
+                <textarea class="codi console"><pre>Serveix per mostrar         esta estructurat realment
+                    el arxiu
+                </pre></textarea>
+                <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                <div class="resultat"></div>
+            </div>
+            <h3>Etiqueta pre</h3>
+               <div class="Mostra">
+                <textarea class="codi console"><pre>Serveix per mostrar         esta estructurat realment
+                    el arxiu
+                </pre></textarea>
+                <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                <div class="resultat"></div>
+            </div>
+            <h3>Etiqueta pre</h3>
+               <div class="Mostra">
+                <textarea class="codi console"><pre>Serveix per mostrar         esta estructurat realment
+                    el arxiu
+                </pre></textarea>
+                <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                <div class="resultat"></div>
+            </div>
+            
+
+            <table class="taula">
+                <tr>
+                    <td class="coltitol">Codi</td>
+                    <td class="coltitol">Resultat</td>
+                    <td class="coltitol"> Escrit</td>
+                </tr>
+                               <tr>
+                    <td class="coltitol">text citat d'una altra font</td>
+                    <td>
+                        <blockquote cite="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">Creative
+                            Commons Attribution-NonCommercial-ShareAlike 4.0 International
+                            This license requires that reusers give credit to the creator. It allows reusers to
+                            distribute, remix, adapt, and build upon the material in any medium or format, for
+                            noncommercial purposes only. If others modify or adapt the material, they must license the
+                            modified material under identical terms.</blockquote>
+                    </td>
+                    <td class="codi">&lt;blockquote
+                        cite="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"> Commons
+                        Attribution-NonCommercial-ShareAlike 4.0 International
+                        This license requires that reusers give credit to the creator. It allows reusers to
+                        distribute, remix, adapt, and build upon the material in any medium or format, for
+                        noncommercial purposes only. If others modify or adapt the material, they must license the
+                        modified material under identical terms.&lt;/blockquote></td>
+                </tr>
+                <tr>
+                    <td class="coltitol">Mostrar el text em format codi</td>
+                    <td><code>sudo apt install</code></td>
+                    <td class="codi"><code>&lt;code>sudo apt install&lt;code></code></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p class="subtitol">Els enllaços en HTML</p>
+            <p class="text">En HTML els enllaços permeten moures més facilment des de una pagina web o moures dese de
+                una pagina web
+                a una d'altra. I un enlaç en HTML pot estar format per una imatge, text o imatge i text.</p>
+            <p class="text">Per fer un enllaç es fa servir el &lt;a>.</p>
+            <h3>Enllaç amb text</h3>
+            <div class="flexcodi">
+                <div class="codi"><code>&lt;a href "https://www.google.com"> GOOGLE &lt;/a></code></div>
+                <div class="result">
+                    <h3> Resultat</h3>
+                    <p><a href="https://www.google.com">GOOGLE</a></p>
+                </div>
+            </div>
+            <h3>Enllaç amb imatge</h3>
+            <div class="flexcodi">
+                <div class="codi">
+                    <code>&lt;a href "https://www.google.com"> &lt;img src="images/Google.png" alt="google.com"> &lt;/a></code>
+                </div>
+                <div class="result">
+                    <h3> Resultat</h3>
+                    <p><a href="https://www.google.com"><img src="images/Google.png" alt="google.com"
+                                class="botonsresult"></a></p>
+                </div>
+            </div>
+            <h3>Enllaç amb text i imatge</h3>
+            <div class="flexcodi">
+                <div class="codi">
+                    <code>&lt;a href "https://www.google.com">&lt;img src="images/Google.png" alt="google.com"> GOOGLE &lt;/a></code>
+                </div>
+                <div class="result">
+                    <h3> Resultat</h3>
+                    <p><a href="https://www.google.com"><img src="images/Google.png" alt="google.com"
+                                class="botonsresult">GOOGLE</a></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="subtitol">llistes en HTML</p>
+            <p class="text">Les llistes en HTML poden ser de dos tipus ordenades o no ordenada. La ordenada es la
+                classica llista que
+                segueix un ordre com 1,2,3,4... o a,b,c,d... mentre que les llistes no ordenades son aquelles que tenen
+                un
+                punt, un guiò o el que sigui.</p>
+            <p class="text"> I per fer una llista el que primer has de posar es el següent:
+                <br><span class="verde">&lt;ul></span>: llista no ordenada <br><span class="verde">&lt;ol></span>:
+                llista ordenada
+            </p>
+            <div class="flexcodi">
+                <div class="codi">
+                    <p class="text">Llistes ordenades</p>
+                    <code>&lt;ol><br>
+                    &lt;li>Introducció&lt;/li> <br>
+                    &lt;li>Punt 1&lt;/li> <br>
+                    &lt;li>Punt 2&lt;/li> <br>
+                    &lt;li>Conclusió&lt;/li> <br>
+                    &lt;/ol>                         
+                </code>
+                </div>
+                <div class="result">
+                    <h3>Resultat</h3>
+                    <ol>
+                        <li>Introducció</li>
+                        <li>Punt 1</li>
+                        <li>Punt 2</li>
+                        <li>Conclusió</li>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <div class="flexcodi">
+                <div class="codi">
+                    <p class="text">Llista no ordenada</p>
+                    <code>&lt;ul><br>
+                        &lt;li>Introducció&lt;/li> <br>
+                        &lt;li>Punt 1&lt;/li> <br>
+                        &lt;li>Punt 2&lt;/li> <br>
+                        &lt;li>Conclusió&lt;/li> <br>
+                        &lt;/ul>         
+                    </code>
+                </div>
+                <div class="result">
+                    <h3>Resultat</h3>
+                    <ul>
+                        <li>Introducció</li>
+                        <li>Punt 1</li>
+                        <li>Punt 2</li>
+                        <li>Conclusió</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="subtitol">IMATGES en HTML</p>
+            <p class="text">Introduir una imatge a una web és tan fàcil com introduir text. Els formats d'imatge
+                recomanats per
+                utilitzar a les pàgines webs són PNG, JPG, SVG i GIF. <br>
+                l'etiqueta per poder afegir una imatge es <span class="verde">&lt;img></span></p>
+            <div class="flexcodi">
+                <div class="codi"><br>&lt;img src="images/fons.jpg" alt="text alternatiu"></div>
+                <div class="result">
+                    <h3>Resultat</h3> <br>
+                    <img src="images/fons.jpg" alt="textalternatiu" class="botonsresultat">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="subtitol">Taules en HTML</p>
+            <p class="text">Les taules presenten informacicó organitzada en files i columnes. Per crear una taula
+                necessitem 4 etiquetes de base:</p>
+            <ul class="text">
+                <li><span class="verde">&lt;table></span>: per crear la taula</li>
+                <li><span class="verde">&lt;tr></span>: per definir les files</li>
+                <li><span class="verde">&lt;td></span>: per definir les cel·les</li>
+                <li><span class="verde">&lt;th></span> : per definir les cel·les que faran de capcalera</li>
+                <li><span class="verde">&lt;td colspan="{valor}"></span>: per poder crear cel·les que ocupin més de una
+                    columna</li>
+                <li><span class="verde">&lt;td rowspan="{valor}"></span>: per poder crear cel·les que ocupin més de una
+                    fila</li>
+            </ul>
+            <p class="text">Exemple de taula:</p>
+            <div class="flexcodi">
+                <div class="codi"><code>
+                    &lt;table> <br>
+                       &lt;tr> <br>
+                         &lt;th> TEXT &lt;/th> <br>
+                         &lt;th> PREU &lt;/th> <br>
+                         &lt;th> DESCOMPTE &lt;/th> <br>
+                       &lt;/tr> <br>
+                       &lt;tr> <br>
+                         &lt;td> Ous &lt;/td> <br>
+                         &lt;td> 12 euros &lt;/td> <br>
+                         &lt;td> 20% &lt;/td> <br>
+                       &lt;/tr> <br>
+                       &lt;tr> <br>
+                         &lt;td rowspan="2"> Pollastre &lt;/td> <br>
+                         &lt;td> 17 euros &lt;/td> <br>
+                         &lt;td> 30% &lt;/td> <br>
+                       &lt;/tr> <br>
+                       &lt;tr> <br>
+                         &lt;td colspan="2"> 0 euros (Regal) &lt;/td> <br>
+                         &lt;/td> <br>
+                       &lt;/tr> <br>
+                    &lt;/table>
+                </code></div>
+                <div class="result">
+                    <table>
+                        <tr>
+                            <th> TEXT </th>
+                            <th> PREU </th>
+                            <th> DESCOMPTE </th>
+                        </tr>
+                        <tr>
+                            <td> Ous </td>
+                            <td> 12 euros </td>
+                            <td> 20% </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"> Pollastre </td>
+                            <td> 17 euros </td>
+                            <td> 30% </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> 0 euros (Regal) </td>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </article>
+    <footer>
+      <p>
+        Fet per:
+        <a href="mailito:miquelmb11@gmail.com">miquelmb11@gmail.com</a>
+      </p>
+      <p
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:dct="http://purl.org/dc/terms/"
+      >
+        <span property="dct:title">Preparació Examen HTML i CSS</span> by
+        <span property="cc:attributionName">Miquel Marquès Bravo</span> is
+        licensed under
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+          target="_blank"
+          rel="license noopener noreferrer"
+          style="display: inline-block"
+          >CC BY-NC-SA 4.0<img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+            alt=""
+        /></a>
+      </p>
+    </footer>
+    <script src="../js/script_base.js"></script>
+  </body>
+</html>
