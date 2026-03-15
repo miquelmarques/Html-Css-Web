@@ -2,14 +2,14 @@ const PropietatsCss = [
     {
         "name": "font-family",
         "descrip": "Serveix per posar un estil de lletra",
-        "codi": "font-family: Arial;",
-        "exemple": "Soc lletra arial"
+        "codi": "font-family: 'Courier New';",
+        "exemple": "Soc lletra Courier New"
     },
     {
         "name": "font-size",
         "descrip": "Serveix per posar un tamany a la lletra",
-        "codi": "font-size: 14pt;",
-        "exemple": "Soc tamany 14pt"
+        "codi": "font-size: 20pt;",
+        "exemple": "Soc tamany 20pt"
     },
     {
         "name": "font-style",
@@ -142,240 +142,240 @@ const PropietatsCss = [
         "name": "margin-top / margin-left / margin-bottom / margin-right",
         "descrip": "Serveix per posar un marge en un costat.",
         "codi": "margin-top:10px; margin-left:25px; margin-bottom:0px; margin-right:5px;",
-        "exemple": "Lorem ipsum amb marges aplicats."
+        "exemple": ""
     },
     {
         "name": "margin",
         "descrip": "Agrupa tots els marges. 1 valor = tots iguals; 2 valors = vertical i horitzontal; 4 valors = sentit de les agulles del rellotge; auto centra.",
         "codi": "margin: 10px 5px;",
-        "exemple": "Div centrat amb marges."
+        "exemple": ""
     },
     {
         "name": "padding-top / padding-left / padding-bottom / padding-right",
         "descrip": "Posa marge interior per cada costat.",
         "codi": "padding-top:10px; padding-left:25px; padding-bottom:0px; padding-right:5px;",
-        "exemple": "Div amb padding interior."
+        "exemple": ""
     },
     {
         "name": "padding",
         "descrip": "Agrupa tots els paddings igual que margin.",
         "codi": "padding: 10px 5px;",
-        "exemple": "Div amb padding aplicat."
+        "exemple": ""
     },
     {
         "name": "border-top-width / border-bottom-width / border-left-width / border-right-width",
         "descrip": "Defineix l'amplada del contorn per cada costat.",
         "codi": "border-top-width:4px; border-bottom-width:10px; border-left-width:1px; border-right-width:5px;",
-        "exemple": "Div amb amplades de contorn diferents."
+        "exemple": ""
     },
     {
         "name": "border-width",
         "descrip": "Agrupa totes les amplades del contorn.",
         "codi": "border-width: 5px 10px;",
-        "exemple": "Contorn amb amplades agrupades."
+        "exemple": ""
     },
     {
         "name": "border-top-style / border-bottom-style / border-left-style / border-right-style",
         "descrip": "Defineix l'estil del contorn per costat.",
         "codi": "border-top-style:dashed; border-bottom-style:solid; border-left-style:dotted; border-right-style:double;",
-        "exemple": "Contorn amb estils diferents."
+        "exemple": ""
     },
     {
         "name": "border-style",
         "descrip": "Agrupa tots els estils del contorn.",
         "codi": "border-style: double;",
-        "exemple": "Contorn doble."
+        "exemple": ""
     },
     {
         "name": "border-top-color / border-bottom-color / border-left-color / border-right-color",
         "descrip": "Defineix el color del contorn per costat.",
         "codi": "border-top-color:red; border-bottom-color:blue; border-left-color:green; border-right-color:yellow;",
-        "exemple": "Contorn amb colors diferents."
+        "exemple": ""
     },
     {
         "name": "border-color",
         "descrip": "Agrupa els colors del contorn.",
         "codi": "border-color: gray green;",
-        "exemple": "Contorn amb colors agrupats."
+        "exemple": ""
     },
     {
         "name": "border-top / border-bottom / border-left / border-right",
         "descrip": "Agrupa amplada, estil i color del contorn per costat.",
         "codi": "border-top: solid blue 4px; border-left: dashed black 2px;",
-        "exemple": "Contorn personalitzat per costat."
+        "exemple": ""
     },
     {
         "name": "border",
         "descrip": "Defineix amplada, estil i color del contorn complet.",
         "codi": "border: 4px solid yellow;",
-        "exemple": "Contorn groc complet."
+        "exemple": ""
     },
     {
         "name": "border-top-left-radius / border-top-right-radius / border-bottom-left-radius / border-bottom-right-radius",
         "descrip": "Arrodoniment de cada cantonada.",
         "codi": "border-top-left-radius:5px; border-top-right-radius:10px; border-bottom-left-radius:0px; border-bottom-right-radius:50px;",
-        "exemple": "Cantonades arrodonides."
+        "exemple": ""
     },
     {
         "name": "border-radius",
         "descrip": "Agrupa totes les cantonades.",
         "codi": "border-radius:10px;",
-        "exemple": "Div amb cantonades arrodonides."
+        "exemple": ""
     },
     {
         "name": "box-shadow",
         "descrip": "Afegeix ombra a un element.",
         "codi": "box-shadow: 10px 5px 5px red;",
-        "exemple": "Div amb ombra vermella."
+        "exemple": ""
     },
     {
         "name": "border-spacing",
         "descrip": "Espai entre cel·les d'una taula.",
         "codi": "border-spacing:10px;",
-        "exemple": "Taula amb espai entre cel·les."
+        "exemple": ""
     },
     {
         "name": "box-sizing",
         "descrip": "Evita que padding i border augmentin la mida total.",
         "codi": "box-sizing:border-box; width:40px;",
-        "exemple": "Div amb mida controlada."
+        "exemple": ""
     },
     {
         "name": "list-style-type",
         "descrip": "Defineix el tipus de vinyeta o numeració.",
         "codi": "list-style-type: upper-roman;",
-        "exemple": "Llista amb números romans."
+        "exemple": ""
     },
     {
         "name": "list-style-image",
         "descrip": "Posa una imatge com a vinyeta.",
         "codi": "list-style-image: url(../images/[imatge]);",
-        "exemple": "Llista amb imatge com a vinyeta."
+        "exemple": ""
     },
     {
         "name": "list-style-position",
         "descrip": "Defineix si la vinyeta és dins o fora del contingut.",
         "codi": "list-style-position: inside;",
-        "exemple": "Llista inside/outside."
+        "exemple": ""
     },
     {
         "name": "list-style",
         "descrip": "Agrupa tipus, imatge i posició.",
         "codi": "list-style: square inside;",
-        "exemple": "Llista amb estil complet."
+        "exemple": ""
     },
     {
         "name": "width / height",
         "descrip": "Defineixen amplada i altura d'un element.",
         "codi": "width:50px;",
-        "exemple": "Imatge redimensionada."
+        "exemple": ""
     },
     {
         "name": "max-width / max-height",
         "descrip": "Defineixen el màxim que pot ocupar un element.",
         "codi": "max-height:200px;",
-        "exemple": "Element limitat al màxim."
+        "exemple": ""
     },
     {
         "name": "min-width / min-height",
         "descrip": "Defineixen el mínim que pot ocupar un element.",
         "codi": "min-width:500px; min-height:100px;",
-        "exemple": "Element amb mida mínima."
+        "exemple": ""
     },
     {
         "name": "cursor",
         "descrip": "Canvia l'aparença del cursor.",
         "codi": "cursor: wait;",
-        "exemple": "Cursor d'espera."
+        "exemple": ""
     },
     {
         "name": "visibility",
         "descrip": "Mostra o amaga un element mantenint l'espai.",
         "codi": "visibility: hidden;",
-        "exemple": "Element ocult però amb espai."
+        "exemple": ""
     },
     {
         "name": "display",
         "descrip": "Defineix el tipus de caixa generada.",
         "codi": "display: inline;",
-        "exemple": "Elements en línia."
+        "exemple": ""
     },
     {
         "name": "opacity",
         "descrip": "Defineix l'opacitat de l'element.",
         "codi": "opacity:0.5;",
-        "exemple": "Element semitransparent."
+        "exemple": ""
     },
     {
         "name": "overflow",
         "descrip": "Controla què passa si el contingut sobrepassa el contenidor.",
         "codi": "overflow:hidden;",
-        "exemple": "Contingut ocult."
+        "exemple": ""
     },
     {
         "name": "float",
         "descrip": "Converteix l’element en flotant.",
         "codi": "float:left;",
-        "exemple": "Element flotant a l'esquerra."
+        "exemple": ""
     },
     {
         "name": "clear",
         "descrip": "Evita que un element quedi al costat d’un element flotant.",
         "codi": "clear:both;",
-        "exemple": "Element que neteja flotants."
+        "exemple": ""
     },
     {
         "name": "position",
         "descrip": "Defineix el tipus de posicionament.",
         "codi": "position:absolute;",
-        "exemple": "Element posicionat absolutament."
+        "exemple": ""
     },
     {
         "name": "top / left / right / bottom",
         "descrip": "Defineixen la posició d’un element.",
         "codi": "top:10px; left:10px;",
-        "exemple": "Element desplaçat."
+        "exemple": ""
     },
     {
         "name": "z-index",
         "descrip": "Defineix la capa d’un element.",
         "codi": "z-index:10;",
-        "exemple": "Element per sobre d'altres."
+        "exemple": ""
     },
     {
         "name": "flex-direction",
         "descrip": "Defineix la direcció dels elements dins un contenidor flex.",
         "codi": "flex-direction: column-reverse;",
-        "exemple": "Elements invertits verticalment."
+        "exemple": ""
     },
     {
         "name": "justify-content",
         "descrip": "Alinea els elements flex horitzontalment.",
         "codi": "justify-content: space-around;",
-        "exemple": "Elements separats uniformement."
+        "exemple": ""
     },
     {
         "name": "align-items / align-self",
         "descrip": "Alinea els elements flex verticalment.",
         "codi": "align-items: center;",
-        "exemple": "Elements centrats verticalment."
+        "exemple": ""
     },
     {
         "name": "flex",
         "descrip": "Defineix creixement, reducció i mida base.",
         "codi": "flex: 1 1 auto;",
-        "exemple": "Element flexible."
+        "exemple": ""
     },
     {
         "name": "flex-wrap",
         "descrip": "Permet que els elements flex saltin de línia.",
         "codi": "flex-wrap: wrap;",
-        "exemple": "Elements que ocupen diverses línies."
+        "exemple": ""
     },
     {
         "name": "order",
         "descrip": "Defineix l'ordre dels elements flex.",
         "codi": "order: 2;",
-        "exemple": "Element que canvia de posició."
+        "exemple": ""
     }
 ];
