@@ -8,14 +8,14 @@
     <title>Altres propietats CSS - HTML</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="class-style.css" />
-    <script src="../array.js"></script>
+    <script src="altres-array.js"></script>
 </head>
 
 <body>
 
-    <body>
+    <body onload="OpcionsCSS()">
         <header>
-            <img src="../images/logo.png" alt="logo" />
+            <img src="../../images/logo.png" alt="logo" />
             <h1>HTML, CSS i JS</h1>
             <div>
                 <button onclick="window.location.href = '../../introduccio/index.html'">
@@ -36,10 +36,13 @@
             </div>
         </div>
         <div class="banner"></div>
-        <nav></nav>
+        <nav><select name="propietats" id="LlistaCSS"></select><button onclick="ClasseCerca()">Mostra Codi</button></nav>
         <article>
             <div class="Mostra">
-                <textarea class="codi console">
+                
+
+                </select>
+                <textarea class="codi console" id="css-text">
                         <style>
                             #css{
                                 background-image:url("imatges/fons.jpg");
@@ -67,36 +70,9 @@
                     </textarea>
                 <button onclick="ExecutarCodiHTML(this)">Executar</button>
                 <div class="resultat" style="overflow: scroll;height:500px;"></div>
-            </div>
-                      <div class="Mostra">
-                <textarea class="codi console">
-                        <style>
-                            #css{
-                                background:url(imatges/fons.jpg) fixed cover;
-                            }
-                        </style>
-                        <div id="css">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat a tellus sed tempus. In sed porttitor velit. Fusce id leo ultrices, feugiat ex a, tempus augue. Fusce eget urna nisi. Curabitur pulvinar sit amet enim id ultricies. Pellentesque consequat, nunc eget consectetur tempor, augue est placerat metus, id congue est magna sed justo. In aliquet tortor nec nulla fringilla, eget semper arcu iaculis. In porttitor, massa vel aliquet ultrices, tortor dolor placerat sapien, sit amet vulputate lacus arcu sit amet metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ut ornare mi. Duis rutrum, est et aliquam aliquet, quam lectus mollis elit, a convallis neque ipsum a ex. Curabitur egestas ex non suscipit porta. Vivamus aliquet leo augue, in volutpat erat luctus vitae. Proin aliquet commodo tellus, sed porttitor est elementum sed.
-                            Etiam luctus ut neque nec finibus. Proin tincidunt a enim quis sagittis. Nam ac maximus libero. Duis mattis metus eu finibus porttitor. Phasellus tempor tortor eget massa pellentesque, eu finibus lectus pretium. Vestibulum enim justo, condimentum tincidunt nibh ac, luctus pharetra tellus. Phasellus eu eleifend risus. Phasellus nec mollis purus. Nam suscipit leo sit amet nulla viverra consectetur at in metus.
-                            Aenean hendrerit tristique diam, eget gravida augue dictum vel. Integer vitae lacinia quam. Vestibulum dictum luctus magna, auctor vestibulum orci. Nulla porta lectus vitae tellus mollis efficitur. Nunc dolor sem, tincidunt sit amet ornare ac, consectetur in nibh. Nulla scelerisque lorem dictum tincidunt tempus. Cras non urna posuere, malesuada nisi sit amet, elementum elit. Vestibulum fermentum tortor ante, id ullamcorper dui facilisis eget. Sed quis sagittis mi. Etiam posuere finibus suscipit. Curabitur lacinia lobortis nunc, sit amet ultrices odio vehicula vel. Curabitur laoreet arcu sed velit iaculis, quis semper turpis malesuada. Sed ac neque porta, porttitor sapien id, faucibus magna. Aliquam at tristique est. Suspendisse tempus est leo, a elementum elit egestas nec. Donec sit amet mauris sit amet turpis tempor viverra aliquam nec eros.
-                            Aenean fermentum nibh eu faucibus porta. Maecenas dapibus, libero at laoreet ultricies, leo tortor posuere nisi, sed iaculis nulla nisi nec erat. Praesent vitae nulla eu urna aliquet semper vitae et ante. Sed pulvinar euismod velit non suscipit. Vivamus non lacus ac augue gravida eleifend id et risus. Cras eu pretium lorem. Nulla facilisi. Morbi lobortis dui non ligula fermentum, a aliquet nibh pretium. Nam vitae tincidunt orci, sit amet maximus augue. Aliquam molestie maximus diam, id aliquet ex maximus sed.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                            Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                        </div>
-                    </textarea>
-                <button onclick="ExecutarCodiHTML(this)">Executar</button>
-                <div class="resultat" style="overflow: scroll;height:500px;"></div>
-            </div>
         </article>
         <script src="script.js"></script>
+        <script src="../../js/script_base.js"></script>
     </body>
 
 </html>
