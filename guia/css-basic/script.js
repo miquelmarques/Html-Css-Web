@@ -27,7 +27,7 @@ function funcio() {
     codi.classList.add("console");
     let exemple = document.createElement("td");
     if (!resultats[i].exemple) {
-      exemple.innerHTML =`<a href="altres/${resultats[i].name}">Prem aquí</a>`}
+      exemple.innerHTML =`<a href="altres/index.html#${resultats[i].name}">Prem aquí</a>`}
     else {
       exemple.innerHTML = `<div style="${resultats[i].codi}">${resultats[i].exemple}</div>`;
     }

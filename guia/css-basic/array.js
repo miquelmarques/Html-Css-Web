@@ -135,7 +135,7 @@ const PropietatsCss = [
     {
         "name": "background",
         "descrip": "Serveix per fer tot el anterior",
-        "codi": " background: url(../images/logo.png) local;",
+        "codi": " background: url(../images/logo.png) fixed cover;",
         "exemple": ""
     },
     {
