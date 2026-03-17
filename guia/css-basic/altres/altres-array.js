@@ -11,19 +11,19 @@ const PropietatsAmbDependenciesCSS = [
     },
     {
         "name": "margin-top / margin-left / margin-bottom / margin-right",
-        "codi": "margin-top:10px;\n margin-left:25px;\n margin-bottom:0px;\n margin-right:5px;\n",
+        "codi": "margin-top:10px;\n margin-left:25px;\n margin-bottom:0px;\n margin-right:5px;\n background-color:green;\n",
     },
     {
         "name": "margin",
-        "codi": "margin: 10px 5px;\n",
+        "codi": "margin: 50px 5px;\nbackground-color:green;\n",
     },
     {
         "name": "padding-top / padding-left / padding-bottom / padding-right",
-        "codi": "padding-top:10px;\n padding-left:25px;\n padding-bottom:0px;\n padding-right:5px;\n",
+        "codi": "padding-top:10px;\n padding-left:25px;\n padding-bottom:0px;\n padding-right:5px;\n background-color:green;\n",
     },
     {
         "name": "padding",
-        "codi": "padding: 10px 5px;\n",
+        "codi": "padding: 10px 5px;\n background-color:green;\n",
     },
     {
         "name": "border-top-width / border-bottom-width / border-left-width / border-right-width",
@@ -67,7 +67,7 @@ const PropietatsAmbDependenciesCSS = [
     },
     {
         "name": "box-shadow",
-        "codi": "box-shadow: 10px 5px 5px red;\n",
+        "codi": "box-shadow: 10px 5px 5px red;\n width:50px; height:50px;",
     },
     {
         "name": "border-spacing",
@@ -123,50 +123,42 @@ const PropietatsAmbDependenciesCSS = [
     },
     {
         "name": "overflow",
-        "codi": "overflow:hidden;\n",
+        "codi": "overflow:hidden; \nheight:100px;\n",
     },
     {
         "name": "float",
-        "codi": "float:left;\n",
-    },
-    {
-        "name": "clear",
-        "codi": "clear:both;\n",
+        "codi": "float:right;\nwidth:50%;\n background-color:green;",
     },
     {
         "name": "position",
-        "codi": "position:absolute;\n",
+        "codi": "position:relative;\n top: 60px;\n left: 80px; \n/* Guia de funcionament position:relative; <--Ho fa de manera relativa es a dir passa per sobre\n position:absolute; <-- Ho fa de manera absoluta on passa el mateix que el relativa pero passa com una altra capa \n position:fixed; <-- Ho fa de manera fixa es a dir que no es mou*/",
     },
     {
         "name": "top / left / right / bottom",
-        "codi": "top:10px;\n left:10px;\n",
+        "codi": "position:relative;\n top:10px;\n left:10px;\nz-index:2;\n",
     },
     {
         "name": "z-index",
-        "codi": "z-index:10;\n",
+        "codi": "position:relative;\n z-index:10;\n",
     },
     {
         "name": "flex-direction",
-        "codi": "flex-direction: column-reverse;\n",
+        "codi": "display:flex;\nflex-direction: column-reverse;\n",
     },
     {
         "name": "justify-content",
-        "codi": "justify-content: space-around;\n",
+        "codi": " display:flex;\n justify-content: space-around;\n",
     },
     {
         "name": "align-items / align-self",
-        "codi": "align-items: center;\n",
+        "codi": "display:flex;\nalign-items: center;\n",
     },
     {
         "name": "flex",
-        "codi": "flex: 1 1 auto;\n",
+        "codi": "display:flex;\nflex: 4 1 100px;\n",
     },
     {
         "name": "flex-wrap",
-        "codi": "flex-wrap: wrap;\n",
+        "codi": "display:flex;\nflex-wrap: wrap;\n; flex-direction-column;\nwidth:20px;\n height:20px",
     },
-    {
-        "name": "order",
-        "codi": "order: 2;\n",
-    }
 ];

@@ -1,0 +1,32 @@
+#LlistaCSS{
+ border: green 3px solid;
+ width:80%;
+ height: 40px;
+ outline: none;
+transition: all ease 1s;
+border-radius: 10px 0px 0px 10px;
+};
+#LlistaCSS:hover{
+    border: rgb(87, 237, 237);
+}
+
+nav{
+    width:50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+nav button{
+    border-radius: 0px 10px 10px 0px;
+    background-color: green;
+    border: none;
+    width: 20%;
+    height: 40px;
+    color:white;
+    transition: all ease 0.5s;
+}
+nav button:hover{
+    background-color: rgb(0, 105, 0);
+    color:gold;
+}
