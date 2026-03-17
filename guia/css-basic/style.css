@@ -99,9 +99,8 @@ footer a {
 .Mostra {
   display: flex;
 }
-.Mostra div {
-  width: 40%;
-  margin-left: 80px;
+.Mostra > div {
+  width: 50%;
 }
 .Mostra button {
   position: absolute;

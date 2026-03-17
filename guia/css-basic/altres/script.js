@@ -1,13 +1,20 @@
-function ExecutarCodiHTML(boto){
-    const bloc = boto.parentElement;                
-    const codi = bloc.querySelector('.codi').value;  
-    const resultat = bloc.querySelector('.resultat'); 
-    resultat.innerHTML = codi; 
+function ExecutarCodiHTML(boto) {
+    const bloc = boto.parentElement;
+    const codi = bloc.querySelector('.codi').value;
+    const resultat = bloc.querySelector('.resultat');
+    resultat.innerHTML = codi;
 }
-function ClasseCerca(){
-    var Valor = Number(document.getElementById("LlistaCSS").value);
-    let UbicacioCSS = document.getElementById("css-text"); 
-    UbicacioCSS.value = `<style>\n #css{\n ${PropietatsAmbDependenciesCSS[Valor].codi}\n} \n</style> \n <div id="css">
+function ClasseCerca() {
+    const Valor = Number(document.getElementById("LlistaCSS").value);
+    let UbicacioCSS = document.getElementById("css-text");
+    if (PropietatsAmbDependenciesCSS[Valor].name.includes("list")) {
+        UbicacioCSS.value = `<style>\n #css{\n ${PropietatsAmbDependenciesCSS[Valor].codi}\n} \n</style> \n <ul id="css">
+                            <li> CSS </li>
+                            <li> HTML </li>
+                            <li> JS </li>
+                        </ul>`;
+    } else {
+        UbicacioCSS.value = `<style>\n #css{\n ${PropietatsAmbDependenciesCSS[Valor].codi}\n} \n</style> \n <div id="css">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat a tellus sed tempus. In sed porttitor velit. Fusce id leo ultrices, feugiat ex a, tempus augue. Fusce eget urna nisi. Curabitur pulvinar sit amet enim id ultricies. Pellentesque consequat, nunc eget consectetur tempor, augue est placerat metus, id congue est magna sed justo. In aliquet tortor nec nulla fringilla, eget semper arcu iaculis. In porttitor, massa vel aliquet ultrices, tortor dolor placerat sapien, sit amet vulputate lacus arcu sit amet metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ut ornare mi. Duis rutrum, est et aliquam aliquet, quam lectus mollis elit, a convallis neque ipsum a ex. Curabitur egestas ex non suscipit porta. Vivamus aliquet leo augue, in volutpat erat luctus vitae. Proin aliquet commodo tellus, sed porttitor est elementum sed.
                             Etiam luctus ut neque nec finibus. Proin tincidunt a enim quis sagittis. Nam ac maximus libero. Duis mattis metus eu finibus porttitor. Phasellus tempor tortor eget massa pellentesque, eu finibus lectus pretium. Vestibulum enim justo, condimentum tincidunt nibh ac, luctus pharetra tellus. Phasellus eu eleifend risus. Phasellus nec mollis purus. Nam suscipit leo sit amet nulla viverra consectetur at in metus.
                             Aenean hendrerit tristique diam, eget gravida augue dictum vel. Integer vitae lacinia quam. Vestibulum dictum luctus magna, auctor vestibulum orci. Nulla porta lectus vitae tellus mollis efficitur. Nunc dolor sem, tincidunt sit amet ornare ac, consectetur in nibh. Nulla scelerisque lorem dictum tincidunt tempus. Cras non urna posuere, malesuada nisi sit amet, elementum elit. Vestibulum fermentum tortor ante, id ullamcorper dui facilisis eget. Sed quis sagittis mi. Etiam posuere finibus suscipit. Curabitur lacinia lobortis nunc, sit amet ultrices odio vehicula vel. Curabitur laoreet arcu sed velit iaculis, quis semper turpis malesuada. Sed ac neque porta, porttitor sapien id, faucibus magna. Aliquam at tristique est. Suspendisse tempus est leo, a elementum elit egestas nec. Donec sit amet mauris sit amet turpis tempor viverra aliquam nec eros.
@@ -23,10 +30,11 @@ function ClasseCerca(){
                             Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
                             Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
                         </div>`;
+    }
 };
-function OpcionsCSS(){
-    let llista = document.getElementById("LlistaCSS"); 
-    for(i in PropietatsAmbDependenciesCSS){
+function OpcionsCSS() {
+    let llista = document.getElementById("LlistaCSS");
+    for (i in PropietatsAmbDependenciesCSS) {
         let opcio = document.createElement("option");
         opcio.innerHTML = PropietatsAmbDependenciesCSS[i].name;
         opcio.value = i;

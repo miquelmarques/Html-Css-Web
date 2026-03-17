@@ -6,7 +6,7 @@ const PropietatsAmbDependenciesCSS = [
     },
     {
         "name": "background",
-        "codi": " background: url('imatges/fons.jpg) fixed cover;\n",
+        "codi": " background: url('imatges/fons.jpg') no-repeat fixed;\nbackground-size: cover\n",
 
     },
     {
@@ -47,7 +47,7 @@ const PropietatsAmbDependenciesCSS = [
     },
     {
         "name": "border-color",
-        "codi": "border-color: gray green;\n",
+        "codi": "border-color: gray;\nborder-width:2px;\nborder-style:solid;",
     },
     {
         "name": "border-top / border-bottom / border-left / border-right",
@@ -95,12 +95,10 @@ const PropietatsAmbDependenciesCSS = [
     },
     {
         "name": "width / height",
-
         "codi": "width:50px;\n",
     },
     {
         "name": "max-width / max-height",
-
         "codi": "max-height:200px;\n",
     },
     {
