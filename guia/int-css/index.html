@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <title>Introducció CSS- HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="logo" />
+      <h1>HTML, CSS i JS</h1>
+      <div>
+        <button onclick="window.location.href = '../introduccio/index.html'">
+          Introducció
+        </button>
+        <button onclick="window.location.href='../html/index.html'">Primer arxiu HTML</button>
+        <button onclick="window.location.href='index.html'">Introducció CSS</button>
+        <button onclick="NavMostrar()">Estils de CSS</button>
+        <button onclick="">Formularis</button>
+      </div>
+    </header>
+    <div class="BackgroundSubLlista">
+      <div id="SubLlista" style="display: none" class="navllista">
+        <button onclick="window.location.href='../css-basic/index.html'">Basic</button>
+        <button onclick="">Avançat</button>
+      </div>
+    </div>
+    <div class="banner"></div>
+    <nav></nav>
+    <article>
+      <h1>Introducció CSS</h1>
+      <div>
+        <h2>Que és CSS?</h2>
+        <p>
+          CSS (Cascading Style Sheets) és el llenguatge que s’utilitza per donar estil a les pàgines web. CSS decideix com es veuen (colors, mides, posicions, marges...).
+        </p>
+      </div>
+      <div>
+        <p class="text">Existeixen 3 maneres d’associar un full d’estil a un document HTML:</p>
+        <ul class="text menu">
+            <li>Aplicar de forma local</li>
+            <li>Fulls d'estil interns</li>
+            <li>Fulls d'estil externs</li>
+        </ul>
+        <h3>Aplicar estils de forma local</h3>
+        <p>En aqest exemple farem que el div tingui un borde de color blau i de dos pixels.</p>
+                <div class="Mostra">
+                    <textarea class="codi console">
+                      <div style="border:2px solid blue">Lorem Ipsum</div>
+                    </textarea>
+                    <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                    <div class="resultat"></div>
+                </div>
+      </div>
+      <h3>Full d'estils intern</h3>
+        <p>En aqest exemple farem que el div tingui un borde de color blau i de dos pixels.</p>
+                <div class="Mostra">
+                    <textarea class="codi console">
+                      <div style="border:2px solid blue">Lorem Ipsum</div>
+                    </textarea>
+                    <button onclick="ExecutarCodiHTML(this)">Executar</button>
+                    <div class="resultat"></div>
+                </div>
+      </div>
+    </div>
+        <!--FInal nova guia-->
+        <div id="local">
+            <p class="subtitol">Aplicar els estil de forma local</p>
+            <p class="text">Podem aplicar els estils de CCS directament a un element HTML incloent el atribut style a la
+                declaració
+                de l'element</p>
+            <div class="flexcodi">
+                <div class="codi">
+                    <code>&lt;p style="color:blue; background-color:red;"> <br> Estil en forma local &lt;/p></code>
+                </div>
+                <div class="result">
+                    <p style="color:blue; background-color:red;"> <br> Estil en forma local </p>
+                </div>
+            </div>
+        </div>
+        <div class="text" id="interns">
+            <p class="subtitol">Fulls d'estils interns</p>
+            <p>Entenem per fulls d'estils interns com un apartat en el fitxer HTML destinat ha fer servir CSS.
+                Normalment es troba en aquest format.</p>
+        </div>
+
+        <div class="flexcodi">
+            <div class="codi"><code>
+        &lt;style type="text/css"> <br>
+         .total{color:red; font-size:40pt;} <br>
+        &lt;/style> <br>
+         &lt;p class="total">9000€&lt;/p> <br>
+        </code></div>
+            <div class="result">
+                <style type="text/css">
+                    .total {
+                        color: red;
+                        font-size: 40pt;
+                    }
+                </style>
+                <p class="total">9000€</p>
+            </div>
+        </div>
+        <br>
+        <div class="AVIS">AVIS <br> En aquest punt els exemples seran vist mitjançant la web de Replit descarregeu-ho
+            per tenir-ho <br>
+            link:<a
+                href="https://replit.com/join/avnxjnwnvx-miquelmb11">https://replit.com/join/avnxjnwnvx-miquelmb11</a>
+        </div>
+        <div class="text">
+            Per fer servir el css de forma externa el que haurem de fer es fer servir un arxiu de css en la carpeta de
+            css que vaig mostra en el exemple i posar el següent en el apartat de head:
+            <br>&lt;link rel="stylesheet" type="text/css" href="css/estilos.css">
+            <br>
+            <br>Feu click <a href="https://replit.com/join/avnxjnwnvx-miquelmb11">aquí</a> per veure el resultat
+        </div>
+        <div class="text">Regles de l'estil</div>
+        <p class="text">Les regles per aplicar un estil css estan compostes per dos de principals:</p>
+        <ul class="text">
+            <li>Selector: Indica als elements als quals s'aplica l'estil</li>
+            <li>Declaració: es l'apartat on es dona les propietats a un element per posar-li l'estil.</li>
+
+        </ul>
+        <p class="text">Al final han de tenir més o menys aquesta esritura</p>
+        <img src="images/Estructura_estil.png" alt="estructura_Estil">
+        <div class="text">
+            <p>Tipus de selectors</p>
+            <p>Els tipus de selector per fer referncia a un element o varis són els següents:</p>
+            <ul>
+                <li>Mitjançant un selector de HTML: En aquest casos es poden fer servir pels elements com &lt;p>, &span>
+                    i el td per poder dir que tots els paragrafs els text seleccionat o les casselles tenen aquest
+                    estil.
+                </li>
+                <li>Indentificadors: Els elements en HTML es defineixen amb la propietat de (id) que significa que els
+                    diferencia de la resta per tant solament es pot fer servir una vegada. <br>
+                    I en el CSS es fan referencia amb aqueta estructura <span class="verde">#id_posat</span>
+                </li>
+                <li>Classes: Son elements en HTMLs que es defineixen amb la propietat (class) que poden tenir-ho més
+                    d'un element i que es poden posar a qualsevol element. <br>
+                    I per fer referencia a ells en el CSS secriu <span class="verde">.classe_posat</span>
+                </li>
+                <li>Pseudo classes: Amb les pseudo classes podem definir diferents estils en un mateix element
+                    S’aplicarà un estil o un altre en funció dels
+                    esdeveniments provocats per l’usuari o de l'estat en el que es trobi l'element. <br>
+                    I la manera de fer-ho en el CSS és la següent: <span class="verde">selector:pseudo-classe</span>
+                </li>
+                <li>
+                    Pseudo-elements:S’aplicarà un estil o un altre en funció dels esdeveniments provocats per l’usuari o
+                    de l'estat en el que es trobi l'element.
+                    En CSS s'escriu de la següent forma: <span class="verde">selector::pseudo-element</span>
+                </li>
+            </ul>
+            <p>Per veure els exemples<a href="https://replit.com/join/avnxjnwnvx-miquelmb11">aquí</a> i el nom de
+                l'arxiu ha obrir es regles_de_estil.hmtl i regles_de_estil.css</p>
+        </div>
+
+    </div>
+      </div>
+    </article>
+    <div style="height: 100px;"></div>
+    <footer>
+      <p>
+        Fet per:
+        <a href="mailito:miquelmb11@gmail.com">miquelmb11@gmail.com</a>
+      </p>
+      <p
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:dct="http://purl.org/dc/terms/"
+      >
+        <span property="dct:title">Preparació Examen HTML i CSS</span> by
+        <span property="cc:attributionName">Miquel Marquès Bravo</span> is
+        licensed under
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+          target="_blank"
+          rel="license noopener noreferrer"
+          style="display: inline-block"
+          >CC BY-NC-SA 4.0<img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+            alt="" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+            alt=""
+        /></a>
+      </p>
+    </footer>
+    <script src="../js/script_base.js"></script>
+  </body>
+</html>

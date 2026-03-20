@@ -44,10 +44,10 @@ function ClasseCerca() {
                             Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
                             Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
                             Maecenas quis tincidunt lorem. Duis ligula nisl, pellentesque ut orci feugiat, pellentesque volutpat nibh. Aenean semper fringilla aliquet. Suspendisse sit amet purus luctus, sodales risus quis, hendrerit elit. Quisque id turpis ut lectus vestibulum lobortis nec lacinia tortor. Ut sollicitudin gravida vestibulum. Nunc sit amet ligula nec massa mollis sollicitudin. Vivamus placerat at mauris a pellentesque. Sed vehicula odio ac ante suscipit pellentesque. Fusce ante tellus, rhoncus non ex quis, luctus porttitor risus.
-                        </div>`;
+                        </div>`;   
                             } else {
                                 if (PropietatsAmbDependenciesCSS[Valor].name.includes("flex") || PropietatsAmbDependenciesCSS[Valor].name.includes("justify-content") || PropietatsAmbDependenciesCSS[Valor].name.includes("align-item")) {
-                                    if (PropietatsAmbDependenciesCSS[Valor].name.includes("flex-wrap")) {
+                                    if (PropietatsAmbDependenciesCSS[Valor].name.includes("flex-wrap")) { // Arreglar Funcio //  
                                     } else {
                                         UbicacioCSS.value = `<style>\n .css{\n ${PropietatsAmbDependenciesCSS[Valor].codi}\n} \n</style> \n <div class=css>\n<div>Text 1</div> \n <div>Text 2</div>\n</div>`;
                                     }
