@@ -1,102 +1,136 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    width:100%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
-header{
-    display:flex;
-    align-items: center;
-    background-color: green;
-    color: white;
-    border-bottom:3px solid black
+header {
+  display: flex;
+  align-items: center;
+  background-color: green;
+  color: white;
+  border-bottom: 3px solid black;
 }
-header img{
-    width: 62px;
-    margin: 10px;
-
+header img {
+  width: 62px;
+  margin: 10px;
 }
-header > ul{
-    display:flex;
-    list-style:none;
-    align-items: end;
-
+header > ul {
+  display: flex;
+  list-style: none;
+  align-items: end;
 }
 .no_mostrar {
-    display: none;
+  display: none;
 }
 .mostrar {
-    display: list-item;
+  display: list-item;
 }
- header button{
-    background-color: green;
-    color: white;
-    border: none;
-    padding:10px;
-    transition: background-color 0.3s ease;
-    height:78px;
-    cursor: pointer;
+header button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  height: 78px;
+  cursor: pointer;
+}
+header button:hover {
+  border-bottom: 2px solid goldenrod;
+  background-color: rgb(0, 105, 0);
+}
+header div {
+  overflow: auto;
+}
+.navllista {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  text-align: center;
+  background-color: grey;
+}
+.navllista button {
+  width: 40%;
+  background-color: grey;
+  border: none;
+  transition: all 0.5s ease;
+  height: 45px;
+  cursor: pointer;
+}
+.navllista button:hover {
+  background-color: rgb(94, 94, 94);
+  color: white;
+}
+div.BackgroundSubLlista {
+  background-color: grey;
+}
+textarea.console {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  width: 400px;
+  height: 400px;
+}
+.console::selection {
+  background-color: white;
+  color: black;
+}
+footer {
+  margin: 0px;
+  padding: 10px;
+  background-color: rgb(85, 85, 85);
+  color: white;
+  font-size: 15pt;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  font-size: 10pt;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.comment {
+  color: rgb(0, 105, 0);
+}
+.Mostra {
+  display: flex;
+}
+.Mostra div {
+  width: 40%;
+  margin-left: 80px;
+}
+.Mostra button {
+  position: absolute;
+  background-color: green;
+  color: white;
+  border: 0px solid;
+  padding: 10px;
+  left: 450px;
+}
+h3 {
+  text-align: center;
+}
+div.console {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+table{
+   border:grey 1px solid;
+ border-spacing: 0px;
+ margin: auto;
+}
+td,th{
+   border:grey 1px solid;
+   width:33%;
 
 }
-header button:hover{
-    border-bottom:2px solid goldenrod;
-    background-color: rgb(0, 105, 0);
-}
-header div{
-    overflow:auto;
-}
-.navllista{
-    width:70%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    text-align: center;
-    background-color: grey;
-}
-.navllista button{
-    width:40%;
-    background-color: grey;
-    border: none;
-    transition: all 0.5s ease;
-    height:45px;
-    cursor:pointer
-
-}
-.navllista button:hover{
-    background-color: rgb(94, 94, 94);
-    color: white;
-}
-div.BackgroundSubLlista{
-    background-color: grey;
-}
-.console{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin: 20px;
-}
-.console::selection{
-    background-color: white;
-    color: black;
-}
-footer{
-
-    margin: 0px;
-    padding: 10px;
-    background-color: rgb(85, 85, 85);
-    color: white;
-    font-size: 15pt;
-    width: 100%;
-    position: fixed;
-    bottom:0px;
-    font-size: 10pt;
-    
-}
-footer a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-.comment{
-    color: rgb(0, 105, 0);
+td:first-child{
+  color:green;
+  font-weight: bold;
 }

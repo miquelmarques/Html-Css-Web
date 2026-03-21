@@ -1,12 +1,73 @@
-<h1 id="html-i-css" style="font-size:18pt;font-family:Arial;">html-i-css</h1>
-<p style="font-size:14pt;font-family:Arial;">En aquesta guia d&#39;HTML i CSS per un nivell bàsic, per poder entendre com funciona HTML i CSS. On podràs utilitzar aquesta web per veure els resultats que dona, els següents elements que es troben.</p>
-<ul style="font-size:14pt;font-family:Arial;">
-<li >HTML web bàsic (imatges, enllaços, títols ...)</li>
-<li>HTML amb formularis i totes les seves propietats</li>
-<li>CSS bàsic per donar format a una web (color, background-color, width, line-height...)</li>
-<li>CSS nivell més intermedi (flex, float, animation, font-face ...)</li>
-</ul>
-<p style="font-size:14pt;font-family:Arial;">Cal destacar que la raó de fer aquesta guia en HTML i CSS és que l&#39;usuari anant ha inspeccionat la pàgina o veient-la des d&#39;un editor pot veure com s&#39;ha aconseguit fer l&#39;efecte o element que s&#39;està mostrant en aquell moment.</p>
-<p><a href="guia/Preparacio.html" style="font-size:18pt;font-family:Arial;">Prem aquì</a></p>
-<p>#</p>
-<h1 id="-preparaci-html-i-css-https-github-com-miquelmarques-miquelm-htmlicss-io-2024-by-miquel-marqu-s-bravo-is-licensed-under-cc-by-nc-sa-4-0-https-creativecommons-org-licenses-by-nc-sa-4-0-ref-chooser-v1-"><a href="https://github.com/miquelmarques/miquelm.htmlicss.io">Preparació HTML i CSS</a> © 2024 by Miquel Marquès Bravo is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1">CC BY-NC-SA 4.0</a></h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>HTML, CSS, JS - Miquel</title>
+    <link rel="stylesheet" href="guia/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="guia/images/logo.png" alt="logo" />
+      <h1>HTML, CSS i JS</h1>
+      <div>
+        <button onclick="window.location.href='./introduccio/index.html'">Introducció</button>
+        <button onclick="">Primer arxiu HTML</button>
+        <button onclick="">Introducció CSS</button>
+        <button onclick="NavMostrar()">Estils de CSS  </button>
+        <button onclick="window.location.href='guia/preparacio.html#8'">Formularis</button>
+      </div>
+    </header>
+    <div class="BackgroundSubLlista">
+      <div id="SubLlista" style="display: none" class="navllista">
+        <button onclick="">Basic</button>
+        <button onclick="window.location.href='guia/preparacio.html#8'">Avançat</button>
+      </div>
+    </div>
+    <div class="banner"></div>
+    <article>
+      <div class="article-left">
+        <div>
+          <h3>Propòsit</h3>
+          <p>
+            Benvingut a la guia definitiva per aprendre HTML! Aquí descobriràs
+            el fascinant món del desenvolupament web, on les pàgines prenen vida
+            a través de línies de codi. Aquesta plataforma està dissenyada per a
+            principiants i experts per igual, oferint-te recursos, tutorials
+            interactius i exemples pràctics que et permetran dominar HTML des de
+            zero. Ja sigui que vulguis crear la teva pròpia pàgina web, millorar
+            les teves habilitats tècniques o simplement explorar una nova
+            afició, ets al lloc indicat. Comencem a construir junts el teu futur
+            digital!
+          </p>
+        </div>
+        <img
+          src="guia/images/banner/banner (1).png"
+          alt="imatge proposit"
+          class="imatge-article"
+        />
+      </div>
+      <div class="article-right">
+        <img
+          src="https://avatars.githubusercontent.com/u/187382041?v=4"
+          alt="perfil github MiquelMarques"
+          class="imatge-article"
+        />
+        <div>
+        <h3>Qui sóc</h3>
+        <p>Com a propietari d’aquest projecte, em dic Miquel Marquès i soc estudiant d’Administració de Sistemes Informàtics en Xarxa (ASIX). Durant el segon any de Sistemes Informàtics i Microinformàtica vaig crear aquesta web com a guia d’estudi per preparar el meu examen. <br>
+
+Un cop superada la prova, he volgut compartir aquesta guia amb vosaltres perquè també us pugui ser útil. <br>
+
+Si teniu qualsevol dubte, em podeu escriure al correu que trobareu a continuació.
+        </p>
+        <h4>Contacte</h4>
+        <a href="https://www.linkedin.com/in/miquel-marques-bravo-a8a563266/"><img src="https://camo.githubusercontent.com/9745a59ad4a919d2e524512c3f732c820d4aa0fe927def4f37c4aba08f7e42bc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c696e6b6564696e2d3041363643323f7374796c653d666f722d7468652d6261646765266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465" alt="linkedin" data-canonical-src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" style="max-width: 100%;"></a>
+        <a href="https://github.com/miquelmarques"><img src="https://camo.githubusercontent.com/800bad6e848cfe326ea2f1606bc3e7ab04aff9c1008e73c48b39a34a156c7f92/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769746875622d2532333132313031312e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" alt="GitHub" data-canonical-src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white" style="max-width: 100%;"></a>
+        </div>
+      </div>
+    </article>
+    <script src="guia/js/script_base.js"></script>
+  </body>
+</html>

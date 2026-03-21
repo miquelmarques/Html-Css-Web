@@ -78,10 +78,23 @@ div.BackgroundSubLlista{
 }
 .imatge-article{
     width:20%;
-    border-radius: 50px;
+    border-radius: 25px;
+    margin:10px;
+    max-height: fit-content;
 
 }
 div.article-left div{
+    width:80%;
+
+}
+.article-right{
+    display: flex;
+    padding:20px;
+    width:60%;
+    margin: auto;
+
+}
+div.article-right div{
     width:80%;
 
 }
